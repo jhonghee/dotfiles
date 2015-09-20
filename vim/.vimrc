@@ -1,5 +1,3 @@
-syntax on
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -68,9 +66,6 @@ let g:syntastic_check_on_wq = 0
 "==================
 " solarized
 syntax enable
-if has('gui_running')
-    set background=light
-else
-    set background=dark
+set background=dark
 endif
 colorscheme solarized
