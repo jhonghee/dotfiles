@@ -67,5 +67,4 @@ let g:syntastic_check_on_wq = 0
 " solarized
 syntax enable
 set background=dark
-endif
 colorscheme solarized
