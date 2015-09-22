@@ -6,6 +6,10 @@ Getting Started with VIM
 1. Vim 7.3.885+ compiled with if_lua
   * https://github.com/Shougo/neocomplete.vim#requirements
   * https://github.com/Shougo/neocomplete.vim#vim-for-mac-os-x
+2. Exuberant ctags
+  * brew install ctags-exuberant
+3. Go helper
+  * go get github.com/garyburd/go-explorer/src/getool
 
 ## Setup
 

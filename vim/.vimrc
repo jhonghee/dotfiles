@@ -1,5 +1,8 @@
+set number
 set nocompatible              " be iMproved, required
 filetype off                  " required
+
+set guifont=Meslo\ LG\ L\ Regular\ for\ Powerline.otf
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -11,7 +14,12 @@ Plugin 'fatih/molokai'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'majutsushi/tagbar'
+Plugin 'garyburd/go-explorer'
+Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
 Plugin 'altercation/solarized', {'rtp': 'vim-colors-solarized/'}
 
 " All of your Plugins must be added before the following line
@@ -53,6 +61,14 @@ if has('conceal')
 endif
 
 "==================
+" tagbar
+nmap <F8> :TagbarToggle<CR>
+
+"==================
+" NERDTree
+map <C-E> :NERDTreeToggle<CR>
+
+"==================
 " syntactic recommended settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -62,6 +78,11 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+"==================
+" vim-airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 
 "==================
 " solarized
