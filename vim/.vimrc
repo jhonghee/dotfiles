@@ -9,6 +9,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'fatih/vim-go'
 Plugin 'fatih/molokai'
 Plugin 'Shougo/neocomplete.vim'
