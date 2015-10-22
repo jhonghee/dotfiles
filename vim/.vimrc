@@ -1,8 +1,13 @@
+syntax on
+set backspace=indent,eol,start
 set number
+set autochdir
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set guifont=Meslo\ LG\ L\ Regular\ for\ Powerline.otf
+set guifont=Courier_New:h11:cANSI
+set incsearch
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -21,7 +26,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
-Plugin 'altercation/solarized', {'rtp': 'vim-colors-solarized/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -85,8 +89,6 @@ let g:syntastic_check_on_wq = 0
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-"==================
-" solarized
-syntax enable
-set background=dark
-colorscheme solarized
+"=================
+" Molokai
+colorscheme molokai
